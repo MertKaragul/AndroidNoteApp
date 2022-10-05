@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    tools:context=".View.NoteCreatePage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:background="@drawable/circle_button"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <EditText
+                android:background="@drawable/create_note_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/create_note_title"
+                android:fontFamily="@font/nunitoextrabold"
+                android:textColorHint="@color/create_note_title_hint_color"
+                android:hint="@string/create_note_title" />
+            <EditText
+                android:background="@drawable/create_note_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/create_note_title_hint_color"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"
+                android:id="@+id/create_note_description"
+                android:hint="@string/create_note_description" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:clickable="true"
+        android:id="@+id/main_page_to_create_note_page_button"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        app:icon="@drawable/ic_baseline_save_24"
+        app:iconSize="30dp"
+        app:iconGravity="start"
+        app:cornerRadius="100dp"
+        android:backgroundTint="#FEBF00"/>
+</RelativeLayout>

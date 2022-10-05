@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#803C94</color>
+    <color name="purple_700">#ECB330</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#F6F6F6</color>
+    <color name="create_note_title_hint_color">#55616E</color>
+    <color name="app_color_1">#FBBF33</color>
+    <color name="button_color">#F7AB00</color>
+</resources>

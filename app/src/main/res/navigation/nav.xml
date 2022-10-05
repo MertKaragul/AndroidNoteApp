@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainPage2">
+    <fragment
+        android:id="@+id/mainPage2"
+        android:name="com.frag.noteapp.View.MainPage"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPage2_to_noteCreatePage"
+            app:destination="@id/noteCreatePage" />
+        <action
+            android:id="@+id/action_mainPage2_to_noteDetailsPage"
+            app:destination="@id/noteDetailsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteCreatePage"
+        android:name="com.frag.noteapp.View.NoteCreatePage"
+        android:label="fragment_note_create_page"
+        tools:layout="@layout/fragment_note_create_page" >
+        <action
+            android:id="@+id/action_noteCreatePage_to_mainPage2"
+            app:destination="@id/mainPage2" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteDetailsPage"
+        android:name="com.frag.noteapp.View.NoteDetailsPage"
+        android:label="fragment_note_details_page"
+        tools:layout="@layout/fragment_note_details_page" >
+        <action
+            android:id="@+id/action_noteDetailsPage_to_mainPage2"
+            app:destination="@id/mainPage2" />
+        <argument
+            android:name="user_note"
+            app:argType="com.frag.noteapp.Database.Usernotemodel" />
+    </fragment>
+</navigation>

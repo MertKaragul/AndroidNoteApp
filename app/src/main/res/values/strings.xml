@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_adding_data">You dont have data. Come add data !</string>
+    <string name="error_text">Have a problem in app , please try again</string>
+    <string name="create_note_title"><b>Type your title</b></string>
+    <string name="create_note_description">Type your description</string>
+    <string name="default_item_title">Default item name</string>
+    <string name="default_item_description">Default item description</string>
+</resources>
